@@ -1,4 +1,4 @@
-package com.labs.challenge.service;
+package com.labs.challenge.services;
 
 import com.labs.challenge.entities.Customer;
 import com.labs.challenge.exceptions.UniqueEmailException;
@@ -15,6 +15,10 @@ public class CustomerService {
 
     @Autowired
     protected CustomerRepository repository;
+
+    public List<Customer> search(String query){
+        return repository.search(query);
+    }
 
     public Customer create(Customer entity) {
         validateCustomer(entity);

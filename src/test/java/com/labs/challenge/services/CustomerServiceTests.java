@@ -1,4 +1,4 @@
-package com.labs.challenge.service;
+package com.labs.challenge.services;
 
 import com.labs.challenge.entities.Customer;
 import com.labs.challenge.exceptions.UniqueEmailException;
